@@ -61,6 +61,14 @@
    "@1hehaq/greb": "1.0.0" // Install via package.json (remove this comment while installation)
    ```
 
+**After npm installation:**
+1. Navigate to the extension directory:
+   ```bash
+   cd node_modules/@1hehaq/greb
+   ```
+
+2. The extension files are now in this directory. Follow the "Manual Setup" instructions below to load it in Chrome.
+
 #### ⇨ Manual Installation
 
 - **Download the Extension**
@@ -84,16 +92,19 @@
 
 ## `Setup`
 
-- **Load in Chrome**
-   - open chrome and navigate to `chrome://extensions/`
-   - enable "Developer mode" in the top right corner
-   - click "Load unpacked"
-   - select the directory containing the extension files
-   - pin the extension (optional)
+#### ⇨ Loading in Chrome
 
-- **Verify Installation**
-   - Look for the Greb icon in your Chrome toolbar
-   - Right-click on any form field to see the "Grab Parameters" option
+1. Open Chrome and navigate to `chrome://extensions/`
+2. Enable "Developer mode" in the top right corner
+3. Click "Load unpacked"
+4. Select the directory containing the extension files:
+   - If installed via npm: Select the `node_modules/@1hehaq/greb` directory
+   - If cloned from repository: Select the `greb` directory
+5. Pin the extension (optional)
+
+#### ⇨ Verify Installation
+- Look for the Greb icon in your Chrome toolbar
+- Right-click on any form field to see the "Grab Parameters" option
 
 <br>
 <br>
