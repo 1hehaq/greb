@@ -1,0 +1,33 @@
+{
+  "name": "@1hehaq/greb",
+  "version": "1.0.0",
+  "description": "Chrome extension to grab form parameters easily",
+  "private": false,
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1hehaq/greb.git"
+  },
+  "files": [
+    "manifest.json",
+    "background.js",
+    "content.js",
+    "popup.js",
+    "popup.html",
+    "icons/*"
+  ],
+  "keywords": [
+    "chrome-extension",
+    "parameters",
+    "form-grabber",
+    "url-parameters"
+  ],
+  "author": "1hehaq (haq)",
+  "license": "Mozilla Public License 2.0",
+  "bugs": {
+    "url": "https://github.com/1hehaq/greb/issues"
+  },
+  "homepage": "https://github.com/1hehaq/greb#readme"
+} 

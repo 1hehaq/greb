@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      width: 250px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+    .option {
+      margin: 10px 0;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+    .option input {
+      margin-right: 8px;
+    }
+    .title {
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: #333;
+    }
+    .separator {
+      border-top: 1px solid #ddd;
+      margin: 15px 0;
+    }
+    .url-tools {
+      margin-top: 15px;
+    }
+    textarea {
+      width: 100%;
+      height: 80px;
+      margin: 8px 0;
+      padding: 5px;
+      resize: vertical;
+    }
+    .buttons {
+      display: flex;
+      gap: 8px;
+    }
+    button {
+      flex: 1;
+      padding: 5px;
+      cursor: pointer;
+      background: #f0f0f0;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+    button:hover {
+      background: #e0e0e0;
+    }
+  </style>
+</head>
+<body>
+  <div class="title">Parameter Grabber Settings</div>
+  <label class="option">
+    <input type="radio" name="grabMode" value="single">
+    Single Parameter Mode
+  </label>
+  <label class="option">
+    <input type="radio" name="grabMode" value="all">
+    All Parameters Mode
+  </label>
+  
+  <div class="separator"></div>
+  
+  <div class="url-tools">
+    <div class="title">URL Encoder/Decoder</div>
+    <textarea id="urlInput" placeholder="Entr URL or parameters to encode/decode"></textarea>
+    <div class="buttons">
+      <button id="encodeBtn">Encode</button>
+      <button id="decodeBtn">Decode</button>
+      <button id="copyBtn">Copy</button>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html> 

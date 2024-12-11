@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "Greb",
+  "version": "1.0",
+  "description": "Grab form parameters and such parameters easily",
+  "permissions": [
+    "contextMenus",
+    "activeTab",
+    "clipboardWrite",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["content.js"]
+  }],
+  "icons": {
+    "16": "icons/greb16.png",
+    "32": "icons/greb32.png",
+    "48": "icons/greb48.png",
+    "128": "icons/greb128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Greb",
+    "default_icon": {
+      "16": "icons/greb16.png",
+      "32": "icons/greb32.png",
+      "48": "icons/greb48.png",
+      "128": "icons/greb128.png"
+    }
+  }
+} 
